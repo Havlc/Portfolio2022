@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8"/>
+	<title>Konrad Cisowski - Portfolio</title>
+	<meta name="description" content="programista HTML, CSS, Javascript, MySQL, Python"/>
+	<meta name="keywords" content="programista, HTML, CSS, Javascript, MySQL, Python, tworzenie, stron, www, zamów, stronę"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="stylesheet" href="stylesheets/BC/fontello.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="/stylesheets/BCstyle.css" type="text/css" />
+	<script src="js/timer.js"></script>
+	
+</head>
+<% include ./partials/nav %>
+<body onload="odliczanie();">
+
+<div id="container">
+	<div class="rectangle">
+		<div id="logo"><a href="#" class="tilelinkhtml5"> Konrad Cisowski</a></div>
+		<div id="zegar">12:00:00</div>
+		<div style="clear: both;"></div>
+	</div>
+
+	<div class= "square">
+		<div class="tile1-5">
+			<a href="#" class="tilelink"><i class="icon-user"></i><br/>Who am I?</a>
+		</div>
+		<a	href="#" class="tilelinkhtml5">
+			<div class="tile1">
+				<i class="icon-laptop"></i><br/>Offer
+			</div>
+		</a>
+		<div style="clear: both;"></div>
+		
+		<div class="tile2">
+				<a href="#" class="tilelink"><i class="icon-graduation-cap"></i><br/>Curriculum vitae</a>
+		</div>
+		<div class="tile3">
+			<a href="#" class="tilelink"><i class="icon-mail"></i><br/>Contact</a>
+		</div>
+		<div style="clear: both;"></div>
+		
+		<div class="tile4">
+			<i>Per aspera ad astra! </i>
+		</div>
+	</div>
+		
+	<div class= "square">
+		<div class="tile5">
+			Welcome at my portfolio!<br/><br/>
+			Contact me for more details.
+		</div>
+		<div class="socials">
+			<div class="gh">
+				<a href="https://github.com/Havlc/Portfolio/" target="_blank" class="sociallink"><i class="icon-github-circled"></i></a>
+			</div>
+			<div class="fb">
+				<a href="https://www.facebook.com/konrad.cisowski.7" target="_blank" class="sociallink"><i class="icon-facebook"></i></a>
+			</div>
+			<div class="gplus">
+				<a href="mailto:cisowski.konrad@gmail.com" target="_blank" class="sociallink"><i class="icon-gplus"></i></a>
+			</div>
+			<div class="ln">
+				<a href="https://pl.linkedin.com/in/konradcisowski" target="_blank" class="sociallink"><i class="icon-linkedin-squared"></i></a>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+	<div style="clear: both;"></div>
+	
+</div>
+<% include ./partials/footer %>

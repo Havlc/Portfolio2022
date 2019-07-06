@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Palindrome</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="/stylesheets/code.css" type="text/css" />
+</head>
+<body>
+<% include ./partials/nav %>
+<h1>Is Your text a palindrome?</h1>
+<h2>...</h2>
+<div class="container">
+	<p>Examples:</p>
+		<ul>
+			<li>kayak</li>
+			<li>eye</li>
+			<li>madam</li>
+			<li>racecar</li>
+			<li>rotator</li>
+		</ul>
+</div>		
+
+<a class="btn btn-primary" href="/palindrome">Again?</a>
+
+<script>
+let str = String(prompt("Place your text to check: "));
+	console.log(str)
+function palindrome(str) {
+	let reg = /[a-zA-Z0-9]/gi
+	let low = str.match(reg).join("").toLowerCase();
+	let reverse = [];
+
+	for (let i=low.length-1; i>=0;i--){
+		reverse.push(low[i]);
+	}
+
+	let compare = reverse.join("")
+	if (compare === low){
+		return true;
+	}
+	return false;
+}
+
+let answer = palindrome(str);
+console.log(answer)
+console.log(answer===true)
+if (answer){
+	document.querySelector("h2").innerHTML = ("Yes, "+str+" is a palindrome");
+} else {
+	document.querySelector("h2").innerHTML = ("No, "+str+" it isn't a palindrome");
+	document.querySelector("h2").style.color="red";
+}
+</script>
+
+<% include ./partials/footer %>

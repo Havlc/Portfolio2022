@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Code</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/code.css">
+
+</head>
+<body>
+<% include ./partials/nav %>
+<h1>Your ciphered text:</h1>
+<h2>...</h2>
+<div class="container">
+	<p>Examples:</p>
+		<ul>
+			<li>uver zr</li>
+			<li>tbbq pubvpr</li>
+			<li>pbagnpg zr</li>
+		</ul>
+</div>		
+
+<a class="btn btn-primary" href="/caesar">Again?</a>
+
+<script>
+	let str = String(prompt("Place your text to cipher: "));
+	console.log(str)
+	function rot13(str){
+		str = str.toUpperCase();
+		console.log(str);
+		let alpha = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+		let cip = ["N","O","P","Q","R","S","T","U","V","W","X","Y","Z","A","B","C","D","E","F","G","H","I","J","K","L","M"];
+		let reg = /[^A-Z]/gi
+		let result = "";
+		for(let i=0;i<str.length;i++){
+			if(reg.test(str[i])){
+				result+=str[i];
+			} else {
+				let c = alpha.indexOf(str[i])
+				result += cip[c];
+			}
+		}
+		return result;
+	}
+
+let res = rot13(str);
+/*console.log(rot13("UVER ZR!"));*/
+document.querySelector("h2").innerHTML = res;
+</script>
+<% include ./partials/footer %>
