@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ball-point</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="landingpage.css">
+</head>
+<body>
+	<div class="header">
+	<header id="header">
+	<nav id="nav-bar">
+		<a href="#header" class="nav-link"><span style='color: blue'>B</span>
+		  <span style='color: pink'>-</span>
+		  <span style='color: green'>p*</span>
+		  <i class="far fa-smile-beam"></i></a>
+		<a class="nav-link" href="#main">Why worth it?</a>
+		<a class="nav-link" href="#pricing">Pricing</a>
+		<a class="nav-link" href="#buy">Order</a>
+	</nav>
+		<h1>
+		  <span style='color: blue'>B</span>
+		  <span style='color: red'>a</span>
+		  <span style='color: yellow'>l</span>
+		  <span style='color: violet'>l</span>
+		  <span style='color: pink'>-</span>
+		  <span style='color: green'>p</span>
+		  <span style='color: blue'>o</span>
+		  <span style='color: red'>i</span>
+		  <span style='color: yellow'>n</span>
+		  <span style='color: purple'>t</span>
+		</h1>
+		<p class="icons">
+			<i class="fas fa-volleyball-ball"></i>
+			<i class="far fa-futbol"></i>
+			<i class="fas fa-baseball-ball"></i></p>
+		<img id="header-img" src="https://images.unsplash.com/photo-1529982860593-e13b3baf49a8?ixlib=rb-1.2.1&amp" alt="A woman among balls" title="source: https://images.unsplash.com/photo-1529982860593-e13b3baf49a8?ixlib=rb-1.2.1&amp">
+		<p>The only point with all balls that you dream about!</p>
+		<a id="button" href="#buy">I want it!</a>
+		</header>
+	</div>
+
+	<div id="container">
+	<main id="main">
+		<h2>Why worth it?</h2>
+		<p class="icons">
+			<i class="fas fa-volleyball-ball"></i>
+			<i class="far fa-futbol"></i>
+			<i class="fas fa-baseball-ball"></i></p>
+			<!-- Film taken from YouTube: https://youtu.be/2EF1K_GAh7g-->
+		<iframe width="0" height="0"frameborder="0"></iframe>
+		<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/2EF1K_GAh7g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</main>
+	<article id="pricing">
+		<h2>Pricing</h2>
+		<p class="icons">
+			<i class="fas fa-volleyball-ball"></i>
+			<i class="far fa-futbol"></i>
+			<i class="fas fa-baseball-ball"></i>
+		</p>
+		<div class="gridcontainer">
+			<div class="price"><i class="fas fa-baseball-ball"> from  5$</i></div>
+			<div class="price"><i class="fas fa-basketball-ball">  from 20$</i></div>
+			<div class="price"><i class="fas fa-futbol"> from 15$</i></div>
+			<div class="price"><i class="fas fa-football-ball"> from 25$</i></div>
+			<div class="price"><i class="fas fa-volleyball-ball"> from 10$</i></div>
+		</div>
+	</article>
+	<article id="buy">
+		<h2>Your order:</h2>
+		<p class="icons">
+			<i class="fas fa-volleyball-ball"></i>
+			<i class="far fa-futbol"></i>
+			<i class="fas fa-baseball-ball"></i>
+		</p>
+			<form id="form" action="https://www.freecodecamp.com/email-submit">
+				<p><label id="ckeckbox-label" for="checkbox">What is your ball?</label><br>
+    			<input type="checkbox" name="checkbox" value="1"><i class="fas fa-baseball-ball"></i> Baseball<br>
+    			<input type="checkbox" name="checkbox" value="2"><i class="fas fa-basketball-ball"></i> Basketball<br>
+    			<input type="checkbox" name="checkbox" value="3"><i class="far fa-futbol"></i> Football<br>
+    			<input type="checkbox" name="checkbox" value="4"><i class="fas fa-football-ball"></i> Rugby<br>
+    			<input type="checkbox" name="checkbox" value="5"><i class="fas fa-volleyball-ball"></i> Volleyball</p>
+    			<p><label for="number">Quantity:</label><br>
+    			<input type="number" id="number" name="number" min="1" max="99"></p>
+				<p><label for="name">Your Name:</label><br>
+				<input type="text" id="name" name="name" placeholder="Enter your name" required=""></p>
+				<input type="text" id="surname" name="name" placeholder="Enter your surname" required=""></p>
+				<p><label for="name">Your email:</label><br>
+				<input type="email" id="email" name="email" placeholder="Enter your email" required=""></p>
+				<input type="submit" id="submit" name="submit" value="Submit">
+			</form>
+	</article>
+	</div>
+	<footer>Page made as an exercise for freeCodeCamp course Responsive Web Design &copy 2019</footer>
+</body>
+</html>

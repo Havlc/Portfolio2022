@@ -1,0 +1,159 @@
+body {
+	background-image: url("http://images.unsplash.com/photo-1498940757830-82f7813bf178?ixlib=rb-1.2.1&amp");
+	/*image taken from unsplash.com*/
+	margin: 0;
+	text-align: center;
+}
+
+h1 {
+	padding-top: 3%;
+}
+
+header p:nth-of-type(2):hover {
+	text-shadow: 15px -10px 5px red;
+	color: red;
+}
+a.nav-link {
+	text-decoration: none;
+	color: white;
+	border-right: 1px dashed pink;
+	min-height: 40px;
+	width: 20%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa-smile-beam {
+	color: gold;
+	font-size: 100%;
+}
+
+a.nav-link:nth-of-type(1) {
+	border-left: 1px dashed pink;
+	color: pink;
+}
+
+#header-img {
+	max-height: 350px;
+	opacity: 1;
+}
+
+#main, article {
+	background: white;
+	opacity: 0.7;
+	margin: 5% 10%;
+	border-radius: 50%;
+	padding: 3%;
+	z-index: 100;
+}
+
+#header {
+	display: block;
+	background: white;
+	opacity: 0.7;
+	border-radius: 50%;
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 2%;
+	min-height: 100%;
+	padding-bottom: 5%;
+}
+
+footer {
+	background: black;
+	color: white;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#button {
+	min-height: 50px;
+	background-color: gold;
+	color: green;
+	text-decoration: none;
+	border-radius: 25%;
+	border: 2px dashed red;
+	padding: 1%;
+}
+
+#button:hover {
+	box-shadow: 5px 5px 5px green;
+	background: green;
+	color: white;
+	border-radius: 30%;
+	border: 2px solid black;
+}
+
+iframe {
+	border-radius: 10%;
+}
+
+form label {
+	font-weight: 700;
+}
+
+nav {
+	background-color: black;
+	min-height: 5%;
+	color: white;
+	opacity: 1;
+	position: fixed;
+	top: 0;
+	width:80%;
+	margin-top: 0;
+	z-index: 1;
+}
+
+.gridcontainer {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto;
+	padding: 5%;
+	max-height: 80%;
+}
+
+.price {
+	color: purple;
+	min-height: 10%;
+	font-size: 2.5em;
+}
+
+.price:hover {
+	 text-shadow: 5px 5px 3px #ee0000;
+}
+
+@media screen and (max-width: 768px) {
+  .price {
+ 	padding-bottom: 5%;
+ 	font-size: 1em;
+   }
+   nav {
+   	max-height: 3%;
+   	font-size: 0.6em;
+   	margin-left: 2%;
+   	margin-right: 2%;
+   }
+   iframe#video {
+   	width: 200px;
+   	height: 150px;
+   	padding-bottom: 40%;
+   }
+   body {
+   	font-size: 1em;
+   }
+
+   #header {
+   	margin-top: 10%;
+   	padding-top: 10%;
+   	padding-bottom: 20%;
+   }
+
+   #main, article {
+   		margin-right: 2%;
+   		margin-left: 2%;
+   }
+}

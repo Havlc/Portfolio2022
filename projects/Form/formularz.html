@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formularz</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="formularz.css">
+</head>
+<body>
+	<nav></nav>
+	<header><h1 id="title"><i class="fa fa-truck" aria-hidden="true"></i> Driver survey</h1></header>
+	<main>
+		<p id="description">We have got a few questions about your job.</p>	
+	</main>
+	<article>
+		<form id="survey-form">
+
+			<label id="name-label" for="name">Enter your name:</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name" required="">
+			<br>
+			<label id="email-label" for="email">Enter your email:</label>
+			<input id="email" type="email" name="email" placeholder="Enter your email" required="">
+			<br>
+			<label id="number-label" for="number">Enter your age:</label>
+			<input id="number" type="number" name="number" placeholder="Enter your age" min="18" max="99" required="">
+			<br>
+			<label id="number-label" for="number">Enter your truck:</label>
+			<select id="dropdown" name="dropdown" class="dropdown">
+		      <option disabled value>What is your truck?</option>
+		      <option  value="1">DAF</option>
+		      <option  value="2">Mercedes</option>
+		      <option  value="3">MAN</option>
+		      <option  value="4">Renault</option>
+		      <option  value="5">Scania</option>
+		      <option  value="6">Volvo</option>
+    		</select>
+    		<br>
+    		<label id="radio-label" for="radio">What is your experience as a driver?</label><br>
+    			<input type="radio" name="radio" value="1">0-1 year<br>
+    			<input type="radio" name="radio" value="2">1-5 years<br>
+    			<input type="radio" name="radio" value="3">more than 5 years<br>
+    		<label id="ckeckbox-label" for="checkbox">Where would you like to go?</label><br>
+    			<input type="checkbox" name="checkbox" value="1">England<br>
+    			<input type="checkbox" name="checkbox" value="2">France<br>
+    			<input type="checkbox" name="checkbox" value="3">Germany<br>
+    			<input type="checkbox" name="checkbox" value="4">Poland<br>
+    			
+    		<label id="textarea-label" for="textarea">What would you like to change?</label>
+    			<br>
+    			<textarea id="textarea" type="textarea" name="textarea" placeholder="Enter text"></textarea>
+    			<br>
+    			<input type="submit" id="submit" value="Submit">
+
+		</form>
+	</article>
+	<footer>Page made as an exercise for freeCodeCamp course Responsive Web Design &copy 2019</footer>
+</body>
+</html>

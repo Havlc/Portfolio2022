@@ -1,0 +1,104 @@
+body
+{
+	background-color: #2F3336;
+	color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+	background: url(john-towner-117317-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+h1
+{
+	font-size: 36px;
+	font-weight: 400;
+	color: #f9acf9;
+	margin: 20px;
+}
+
+.jumpers
+{
+	text-align: center;
+}
+
+.jumpers img
+{
+	width: 100%;
+	height: auto;
+	padding: 5px;
+}
+
+.jumpers p
+{
+	margin-bottom: 30px;
+}
+
+.jumpers figcaption
+{
+	margin-top: 8px;
+}
+
+.navbar
+{
+	min-height: 57px;
+}
+
+.bg-jumpers
+{
+	background-color: purple !important;
+}
+
+.navbar-brand img
+{
+	background-color: #fde2ff;
+}
+
+.dropdown-menu.show a.dropdown-item
+{
+	background-color: #f4f2f4;
+	color: purple;
+}
+
+input.form-control.mr-1
+{
+	background-color: #f4f2f4;
+	color: purple;
+}
+
+button.btn.btn-light {
+	color: purple;
+}
+
+figure:hover{
+	border: 5px dashed purple;
+	border-radius: 5%;
+	box-shadow: inset 0px 0px 40px 40px #f4f2f4;
+	color: purple;
+	animation: background-color;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes background-color {
+	0%{background-color: black;}
+	50%{background-color: grey;}
+	100%{background-color: purple;}
+}
+
+header > p:hover {
+	animation: background-color;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+	0%{background-color: grey;}
+	100%{background-color: purple;
+}
+footer{
+	background-color: purple;
+}

@@ -1,0 +1,52 @@
+body {
+	/*background: #a9ed2d;*/
+	background-image: linear-gradient(green, #a9ed2d, green);
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	line-height: 2em;
+}
+
+header {
+	background: #ffff99;
+	min-height: 80px;
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px dashed black;
+}
+
+footer {
+	background: #ffff99;
+	min-height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px dashed black;
+	margin-top: 5%;
+}
+label{
+	background: #ffff99;
+	line-height: 3em;
+}
+
+article {
+	background-color: white;
+	margin: 0 15% 0 15%;
+	padding: 5%;
+	border-radius: 25%;
+}
+
+#survey-form {
+	display: block;
+
+}
+
+#submit {
+	color: green;
+	box-shadow: 5px 5px 10px green;
+}
+
+#textarea {
+	min-height: 6em;
+
+}

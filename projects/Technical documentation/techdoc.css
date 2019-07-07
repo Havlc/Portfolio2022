@@ -1,0 +1,127 @@
+body {
+	background: url(https://images.unsplash.com/photo-1528158222524-d4d912d2e208?ixlib=rb-1.2.1&amp);
+	/*image - made by David Clode taken from unsplash.com*/
+	background-size: cover;
+	background-repeat: repeat-x;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif, arial;
+	text-align: justify;
+}
+
+header {
+	font-weight: 700;
+
+}
+
+#headerindex{
+	padding-left: 10%;
+
+}
+
+#mainheader {
+	color: #98ff98;
+	text-align: center;
+	text-shadow: 6px 6px 10px blue, 8px 8px 10px yellow;
+}
+
+.container {
+	opacity: 0.7;
+	display: grid;
+	grid-template-columns: 20% auto;
+	border: 2px solid green;
+	background-color: #fffacd;
+
+}
+
+main {
+	border: 2px solid green;
+	padding: 4%;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	background-color: #98ff98;
+}
+
+nav {
+	background-color: #fffacd;
+	padding: 5% 1% 5% 0;
+	position: fixed;
+	width: 18%;
+	max-height: 100%;
+	text-align: left;
+
+}
+
+.subhead {
+	font-weight: 700;
+}
+
+code {
+	background-color: #fffacd;
+	color: blue;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+nav li:hover {
+	background-color: #98ff98;
+	color: green;
+}
+
+nav li {
+	border-bottom: 1px solid green;
+	min-height: 2em;
+	vertical-align: center;
+}
+
+nav ul li {
+	text-indent: -0.5em;
+	list-style-type: none;
+}
+
+#note {
+	color: yellow;
+	text-shadow: 3px 3px 5px red;
+}
+
+#notelink {
+	color: white;
+	border: 1px dashed #98ff98;
+}
+
+#notelink:hover {
+	color: black;
+	background-color: #98ff98;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	background: black;
+	color: white;
+	min-height: 10%;
+}
+
+@media screen and (max-width: 768px) {
+   .container {
+	grid-template-columns: 
+	35% auto;
+}
+   nav {
+   	max-height: 2em;
+   	font-size: 0.7em;
+	padding: 0;
+	margin: 0;
+   }
+   a.nav-link, a.nav-link1 {
+	list-style-type: none;
+	text-indent: -2em;
+	}
+
+   body {
+   	font-size: 1em;
+   }
+}
