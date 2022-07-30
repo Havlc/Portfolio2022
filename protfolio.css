@@ -1,5 +1,8 @@
 body {
 	background-color: grey;
+	background-image: url("https://npr.brightspotcdn.com/dims4/default/5aa8bb9/2147483647/strip/true/crop/3941x5923+0+0/resize/880x1323!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F49%2F7d%2F55258bd74d39b2ad947ee805c61f%2Fsky-near-little-lyford.jpg");
+	background-size: contain; 
+	/*background-repeat: no-repeat;*/
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 
@@ -19,7 +22,7 @@ body {
     left: 5%;
     padding: 4px 4px 4px 8px;
     color: #ddd;
-    background-color: darkgreen;
+    background-color: steelblue;
     white-space: nowrap; 
     -moz-border-radius: 5px; 
     -webkit-border-radius: 5px;  
@@ -47,7 +50,7 @@ body {
 	display: block;
 	background-color: #111;
 	opacity: 0;
-	transition: opacity 1.5s ease-in-out;
+	transition: opacity 1s ease-in-out;
 	bottom: 26%;
 }
 
@@ -62,12 +65,14 @@ body {
 	width: 30%;
 	height: 25%;
 	left: 15%;
+	border-radius: 20%;
+	padding: 2%;
 }
 
 .thumbnail:hover .gitone
 {
 	opacity: 0.85;
-	background-color: #ff3333;
+	background-color: steelblue;
 
 }
 
@@ -77,12 +82,14 @@ body {
 	height: 25%;
 	left: 55%;
 	text-align: center;
+	border-radius: 20%;
+	padding: 2%;
 }
 
 .thumbnail:hover .gittwo
 {
 	opacity: 0.85;
-	color: green;
+	color: steelblue;
 }
 
 
@@ -96,7 +103,7 @@ body {
 .thumbnail:hover .gitthree
 {
 	opacity: 0.85;
-	color: green;
+	color: steelblue;
 }
 h2 {
 	font-size: 3em;
@@ -116,6 +123,13 @@ i.fas.fa-at {
 	font-size: 5em;
 }
 
+.card {
+	width: 19rem;
+	border-color: steelblue;
+	border-radius: 10%;
+	color: steelblue;
+}
+
 #card-group {
 	display: flex;
 	justify-content: space-around;
@@ -123,8 +137,16 @@ i.fas.fa-at {
 }
 
 .card-body {
-	padding: 15% 10%;
+	padding: 8% 5%;
 	line-height: 2.5em;
+	height: 12vh;
+	background-color: #17223b;
+	
+}
+
+#Whoami img {
+	max-height: 55%;
+	filter: brightness(80%)
 }
 
 main {
@@ -142,28 +164,30 @@ main {
 
 .project-tile a:hover {
 
-	text-shadow: 5px 5px 10px green;
+	text-shadow: 5px 5px 10px steelblue;
 }
 
 div.thumbnail img{
 	height: 15rem;
 	width: 90%;
 	margin: 10% 5%;
- 	box-shadow: 2px 2px 10px yellow;
+ 	box-shadow: 4px 4px 10px lightblue;
 }
 
 div.thumbnail img:hover {
- 	box-shadow: 10px 10px 10px green;
+ 	box-shadow: 15px 15px 10px steelblue;
 }
 
 h2 {
 	position: relative;
-	animation: show 5s infinite;
+	animation: show 8s infinite;
 	animation-fill-mode: forwards;
+	color: steelblue;
 }
 
 h3 {
 	margin: 5% 10%;
+	color: steelblue;
 }
 
 section#Contact a{
@@ -185,14 +209,14 @@ section#Contact a{
 .median:hover {
 	text-decoration: none;
 	opacity: 0.8;
-	text-shadow: 5px 5px 10px green;
+	text-shadow: 5px 5px 10px steelblue;
 	transform: rotate(360deg);
 	transition: 1s;
 	
 }
 
 #gh {
-	color: black;
+	color: grey;
 }
 
 #gh1 {
@@ -222,29 +246,32 @@ footer {
 
 @keyframes text {
 	0% {
-		color: darkgreen;
-	}
-
-	15% {
 		color: gray;
 	}
 
-	30% {
+	35% {
+		color: black;
+	}
+
+	40% {
 		color: #0077B5;
 	}
-	45% {
-		color: gray;
+	75% {
+		color: black;
 	}
 
-	60% {
+	76% {
 		color: #d34836;
+	}
+	100% {
+		color: black;
 	}
 
 }
 
 @keyframes show{
 	0% {top: 0px}
-	50% {top: 3em}
+	50% {top: 1.5em}
 	100% {top: 0px;}
 }
 
@@ -259,6 +286,8 @@ footer {
 	}
 }
 
-#Whoami img {
-	max-height: 53%;
+.btn-primary {
+	color: lightsteelblue;
+	background-color: steelblue;
+	border-color: lightsteelblue;
 }
