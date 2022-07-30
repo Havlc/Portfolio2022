@@ -7,7 +7,7 @@
     let navbarDark = document.getElementById("navbar");
     let isDark = false;
         button.addEventListener("click",function(){
-            if(isDark){
+            if(!isDark){
             document.body.style.background = "#000900";
             button.setAttribute("class","btn btn-outline-light my-2 my-sm-0");
             button.innerHTML = 'Light mode <i class="fas fa-power-off"></i>';
