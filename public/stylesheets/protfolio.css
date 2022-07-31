@@ -1,19 +1,22 @@
 body {
-	background-color: grey;
+	background-color: lightslategrey;
 	background-image: url("https://npr.brightspotcdn.com/dims4/default/5aa8bb9/2147483647/strip/true/crop/3941x5923+0+0/resize/880x1323!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F49%2F7d%2F55258bd74d39b2ad947ee805c61f%2Fsky-near-little-lyford.jpg");
-	background-size: contain; 
-	/*background-repeat: no-repeat;*/
+	background-size: contain;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-
+	max-width: 100%;
 }
 
+.navbar-default{
+	max-width:100%;
+  }
 
 [data-title]:hover:after {
     opacity: 1;
     transition: all 0.1s ease 0.5s;
     visibility: visible;
 }
+
 [data-title]:after {
     content: attr(data-title);
     position: absolute;
@@ -142,8 +145,9 @@ i.fas.fa-at {
 
 .card {
 	width: 19rem;
+	height: 34rem;
 	border-color: steelblue;
-	border-radius: 10%;
+	border-radius: 15%;
 	color: steelblue;
 }
 
@@ -158,12 +162,13 @@ i.fas.fa-at {
 	line-height: 2.5em;
 	height: 12vh;
 	background-color: #17223b;
-	
+	border-radius: 0 0 10% 10%;	
 }
 
 #Whoami img {
 	max-height: 55%;
-	filter: brightness(80%)
+	filter: brightness(80%);
+	border-radius: 10% 10% 0 0;
 }
 
 main {
@@ -189,6 +194,7 @@ div.thumbnail img{
 	width: 90%;
 	margin: 10% 5%;
  	box-shadow: 4px 4px 10px lightblue;
+	border-radius: 10%;
 }
 
 div.thumbnail img:hover {
@@ -288,14 +294,14 @@ footer {
 
 @keyframes show{
 	0% {top: 0px}
-	50% {top: 1.5em}
+	50% {top: 1em}
 	100% {top: 0px;}
 }
 
 @media screen and (max-width: 768px){
 	main {
-		background-color: grey;
-		color: black;
+		background-color: black;
+		color: steelblue;
 	}
 
 	#card-group {
